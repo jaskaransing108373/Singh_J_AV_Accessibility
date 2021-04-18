@@ -12,6 +12,9 @@ Steps :-
 3. Open the folder named Singh_J_av_accessiblity in Visual studio code. 
 4. the A/V app will work on www.localhost/singh_j_av_accessibility .
 
+## Roadmap
+ [Roadmap](https://docs.google.com/document/d/11tsFAm-vvpO42ZNDerjNJbata8Ss0FKJ6EOCDfbHcTk/edit?usp=sharing)
+
 ## Prerequistes
 To run the index.html file , you will require to install browser such as google chrome or firefox.
 
