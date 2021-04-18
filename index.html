@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="css/main.css">
+    <title> A/V Accessibility by Jas</title>
+</head>
+
+<body>
+    <div class="container text-center">
+
+        <h2>Media Accessibility</h2>
+        <p>Media that everyone can enjoy, especially designed for people with disabilites.<br> now people can see lyrics
+            and captions of every music and video.</p>
+
+        <div class="nav-tabs">
+
+            <ul class="nav">
+                <li data-menu="Arrival">
+                    <a href="#movie" data-toggle="tab">Movie</a>
+                </li>
+
+                <li data-menu="song">
+                    <a href="#song" data-toggle="tab">song</a>
+                </li>
+
+                <li data-menu="colonia">
+                    <a href="#show" data-toggle="tab">show</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane fade show active" id="movie" role="tabpanel">
+                <div class="content2">
+
+                    <video class="container">
+                        <source src="video/Arrival.mp4">
+                        <track src="vtt/Arrival.vtt">
+                    </video>
+
+                    <div class="progress">
+
+                        <div class="time">00:00</div>
+
+
+                        <progress class="container" id="progress" value="0" min="0">
+                            <span id="progress-bar"></span>
+                        </progress>
+
+                    </div>
+
+                    <div>
+                        <button class="playandpause" data-media="0"><i class="play circle icon"></i></button>
+
+                        <button class="reverse" data-media="1"><i class="backward icon"></i></button>
+
+                        <button class="stop" data-media="2"><i class="stop circle icon"></i></button>
+
+                        <button class="forward" data-media="3"><i class="forward icon"></i></button>
+
+                        <button class="caption" data-media="4"><i class="closed captioning outline icon"></i></button>
+
+                        <button id="mute" type="button" data-caption="mute" data-media="5"><i
+                                class="volume up icon"></i></button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!--song-->
+
+            <h3>click here to view the lyrics</h3>
+            <div class="tab-pane fade" id="song" role="tabpanel">
+
+                <div class="content2">
+                    <div class="lyrics">
+                        <a type="button" data-toggle="collapse" href="#open" role="button">
+                            <img src="https://img.icons8.com/office/16/000000/subtitles.png" />get the lyrics</a>
+
+                        <div class="collapse" id="open">
+
+
+                            Why's it gotta feel like I'm walkin' a tightrope?
+                            Why you wanna see how far I fall?
+                            'Cause I'm already up here and I got my eyes closed
+                            And I ain't never fell from a love this tall<br><br>
+
+                            Are you ready? 'Cause I'm ready to let go
+                            Never thought that I'd be ready again
+                            Guess there's somethin' 'bout the neon and red glow
+                            Got me thinkin' 'bout givin' all in<br><br>
+
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you<br><br>
+
+                            Sittin' with my legs across your torso
+                            We are who we are when we're alone
+                            Baby, I'm ready, any minute we might fall
+                            Lately, I feel like my grip is gone
+                            But you got my all<br><br>
+
+                            Are you ready? 'Cause I'm ready to let go
+                            Never thought that I'd be ready again
+                            Guess there's somethin' 'bout the neon and red glow
+                            Got me thinkin' 'bout givin' all in<br><br>
+
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you<br><br>
+
+                            चौदवीं का चाँद हो, या आफ़ताब हो?
+                            जो भी हो तुम खुदा कि क़सम, लाजवाब हो<br><br>
+
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you<br><br>
+                            Something told me it was you
+                            Something told me it was you
+                            Something told me it was you<br><br>
+                            चौदवीं का चाँद हो, या आफ़ताब हो?
+                            जो भी हो तुम खुदा कि क़सम, लाजवाब हो<br><br>
+
+
+
+                        </div>
+                        <audio>
+                            <source src="audio/tightrope.mp3">
+                        </audio>
+
+                        <div class="thumbnail container">
+
+                            <img src="images/tightrope.jfif" alt="pic">
+
+                            <div class="audio-about">
+                                <h3>tightrope</h3>
+                                <p>Zayn Malik</p>
+                            </div>
+
+
+                            <div class="progress-bar">
+                                <span id="current-time"></span>
+                                <span id="duration"></span>
+                                <div class="progress"></div>
+                            </div>
+
+                            <div class="videoControls">
+                                <img src="images/play.svg" data-button="0" alt="play">
+                                <img src="images/pause.svg" data-button="1" alt="pause">
+                                <img src="images/rewind.svg" data-button="3" alt="rewind">
+                                <img src="images/stop.svg" data-button="2" alt="stop">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--tv show-->
+
+            <div class="tab-pane fade" id="show" role="tabpanel">
+
+                <div class="content2">
+
+                    <video class="container colonia" data-button="0">
+                        <source src="video/Colonia.mp4">
+                        <track src="vtt/colonia.vtt">
+                    </video>
+
+                    <div class="progress">
+
+                        <div class="time2">00:00</div>
+                        <progress class="container" id="progress2" value="0" min="0">
+                            <span id="progress-bar2"></span>
+                        </progress>
+
+                    </div>
+                    <div class="controls container d-flex justify-content-center show-controls">
+                        <button class="playanddpause" data-media="6"><i class="play circle icon"></i></button>
+                        <button class="stop" data-media="7"><i class="stop circle icon"></i></button>
+                        <button class="reverse" data-media="8"><i class="backward icon"></i></button>
+                        <button class="forward" data-media="9"><i class="forward icon"></i></button>
+                        <button class="captain" data-media="10"><i class="closed captioning outline icon"></i></button>
+                        <button id="mutee" type="button" data-media="11"><i class="volume up icon"></i></button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <h3>copyright 2021@jasMediaProductions</h3>
+        <img src="images/LOGO.jpg" alt="mypic" width="100px" height="100px">
+    </div>
+    <script type="module" src="js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

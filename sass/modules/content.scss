@@ -1,0 +1,66 @@
+
+  
+  video, audio {
+    width: 100%;
+  }
+  
+  .controls {
+    height: 50px;
+  
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      border: 0;
+      margin: 0 auto;
+      width: 15%;
+      
+      cursor: pointer;
+
+      i{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: rgb(23, 128, 105);
+        
+      }
+
+      span{
+          font-family: 'Arial';
+          font-size: 2.2rem;
+          color: rgb(141, 119, 119);
+          letter-spacing: 2px;
+      }
+    }
+    
+    button:hover, button:focus {
+      background: #3ee054;
+    }
+    
+    button:active {
+      background: #0a0a0a;
+    }
+}
+ video {
+    margin-bottom: -10px;
+  }  
+  .controls div {
+    font-size: 15px;
+    display: inline-block;
+    line-height: 34px;
+    width: 50px;
+  }
+  
+ 
+
+.line{
+    text-decoration-line:none;
+  }
+
+  .line-through{
+    text-decoration-line: line-through;
+  }
+
+  
